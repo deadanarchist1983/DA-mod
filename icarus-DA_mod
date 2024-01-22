@@ -1,0 +1,113 @@
+{
+    "name": "DA-Mod",
+    "author": "DeadAnarchist",
+    "version": "1.1",
+    "fileName": "DA-Mod",
+    "imageURL": "",
+    "readmeURL": "",
+    "description": "My MOD",
+    "Level2": "True",
+    "Rows": [
+        {
+          "_comment": "Максимальный уровень персонажа",  
+          "CurrentFile": "Character-D_CharacterGrowth.json",
+            "File_Items": [
+                {
+                    "Name": "Player",
+                    "MaxDisplayLevel": 500,
+                    "MaxLevel": 1000
+                }
+            ]
+        },
+       {
+         "_comment": "Вместимость инвентаря",    
+         "CurrentFile": "Inventory-D_InventoryInfo.json",
+            "File_Items": [
+                {
+                    "Name": "Backpack",
+                    "StartingSlots": 20
+                }
+            ]
+        },
+      {
+        "_comment": "Базовые характеристики персонажа",    
+        "CurrentFile": "Stats-D_CharacterStartingStats.json",
+            "File_Items": [
+                {
+                    "Name": "Base_Stats",
+                    "(Value=\"BaseWeightCapacity_+\")": 300
+                }
+            ]
+        },
+      {
+        "_comment": "Стандартные характеристики брони",    
+        "CurrentFile": "Traits-D_Armour.json",
+            "File_Items": [
+                {
+                    "Name": "IO_Undersuit",
+                    "ArmourStats": {
+                "(Value=\"BaseUpgradeSlots_+\")": 4,
+                "(Value=\"BaseOxygenSlots_+\")": 1,
+                "(Value=\"BaseFoodSlots_+\")": 1,
+                "(Value=\"BaseWaterSlots_+\")": 1
+            }
+                }
+            ]
+        },
+      {
+        "_comment": "Прочность инвентаря Larkwell",    
+        "CurrentFile": "Traits-D_Durable.json",
+            "File_Items": [
+                {
+                    "Name": "Meta_Item_Larkwell",
+                    "Max_Durability": 999999
+                }
+            ]
+        },
+      {
+        "_comment": "Характеристики рюкзака Larkwell",    
+        "CurrentFile": "Traits-D_Equippable.json",
+            "File_Items": [
+                {
+                  "Name": "Larkwell_Backpack_Alpha",
+                "GrantedStats": {
+                  "(Value=\"BaseBackpackSlots_+\")": 80,
+                  "(Value=\"BaseOreCarryWeight_+%\")": -90,
+                  "(Value=\"BaseWoodCarryWeight_+%\")": -90,
+                  "(Value=\"BaseFirearmCarryWeight_+%\")": -90
+                }}
+            ]
+        },
+      {
+        "_comment": "Сброс руды в пещерах при каждом входе в игру",    
+        "CurrentFile": "Prospects-D_ProspectList.json",
+            "File_Items": [
+                {
+                    "Name": "Outpost006_Olympus",
+                    "bIsOpenWorld": false
+                },
+                {
+                    "Name": "PRO_B_Extermination",
+                    "FlavourText": "NSLOCTEXT(\"D_ProspectList\", \"PRO_B_Extermination-FlavourText\", \"//OPERATOR: Lagos // BIOME: Swamp // BACKGROUND: The Operator is interested in potential habitation. // MISSION: Construct a living dwelling high in the treetops //TERMS: Flat fee. This section of the Terrazone is exempt from Contractor Insurance claims, proceed with caution.\")"
+                },
+                {
+                    "Name": "OpenWorld_Styx",
+                    "bIsOpenWorld": false
+                },
+                {
+                    "Name": "OpenWorld_Prometheus",
+                    "bIsOpenWorld": false
+                },
+                {
+                    "Name": "PRO_Ashlands_Story1",
+                    "Terrain": {
+                        "RowName": "Terrain_017"
+                    }
+                }
+            ]
+        },
+        {
+            "CurrentFile": "EndOfMod"
+        }
+    ]
+}
