@@ -9,6 +9,28 @@
     "Level2": "True",
     "Rows": [
         {
+            "CurrentFile": "Alterations-D_Alterations.json",
+            "File_Items": [
+                {
+                    "Name": "SmeltingSpeed_1",
+                    "(Value=\"BaseSmeltingSpeed_+%\")": 100
+                },
+{
+                    "Name": "SmeltingSpeed_2",
+                    "(Value=\"BaseSmeltingSpeed_+%\")": 100
+                }              
+            ]
+        },
+      {
+            "CurrentFile": "Traits-D_Generator.json",
+            "File_Items": [
+                {
+                    "Name": "Wood_Torch_Generator",
+                    "GenerationRate": 1
+                }
+            ]
+        },
+        {
             "CurrentFile": "Character-D_CharacterGrowth.json",
             "File_Items": [
                 {
