@@ -58,21 +58,21 @@
                     "GrantedStats": {
                         "(Value=\"BaseBackpackSlots_+\")": 80,
                         "(Value=\"BaseWeightCapacity_+\")": 300,
-                        "(Value=\"BaseOreCarryWeight_+%\")": -90,
-                        "(Value=\"BaseStoneCarryWeight_+%\")": -90,
-                        "(Value=\"BaseFiberCarryWeight_+%\")": -90,
-                        "(Value=\"BaseStickCarryWeight_+%\")": -90,
-                        "(Value=\"BaseWoodCarryWeight_+%\")": -90,
-                        "(Value=\"BaseArrowCarryWeight_+%\")": -90,
-                        "(Value=\"BaseBuildableCarryWeight_+%\")": -90,
-                        "(Value=\"BaseWoodBuildableCarryWeight_+%\")": -90,
-                        "(Value=\"BaseStoneBuildableCarryWeight_+%\")": -90,
-                        "(Value=\"BaseThatchBuildableCarryWeight_+%\")": -90,
-                        "(Value=\"BaseConcreteBuildableCarryWeight_+%\")": -90,
-                        "(Value=\"BaseExoticCarryWeight_+%\")": -90,
-                        "(Value=\"BaseFirearmCarryWeight_+%\")": -90,
-                        "(Value=\"BaseExtractorCarryWeight_+%\")": -90,
-                        "(Value=\"BasFishCarryWeight_+%\")": -90
+                        "(Value=\"BaseOreCarryWeight_+%\")": -100,
+                        "(Value=\"BaseStoneCarryWeight_+%\")": -100,
+                        "(Value=\"BaseFiberCarryWeight_+%\")": -100,
+                        "(Value=\"BaseStickCarryWeight_+%\")": -100,
+                        "(Value=\"BaseWoodCarryWeight_+%\")": -100,
+                        "(Value=\"BaseArrowCarryWeight_+%\")": -100,
+                        "(Value=\"BaseBuildableCarryWeight_+%\")": -100,
+                        "(Value=\"BaseWoodBuildableCarryWeight_+%\")": -100,
+                        "(Value=\"BaseStoneBuildableCarryWeight_+%\")": -100,
+                        "(Value=\"BaseThatchBuildableCarryWeight_+%\")": -100,
+                        "(Value=\"BaseConcreteBuildableCarryWeight_+%\")": -100,
+                        "(Value=\"BaseExoticCarryWeight_+%\")": -100,
+                        "(Value=\"BaseFirearmCarryWeight_+%\")": -100,
+                        "(Value=\"BaseExtractorCarryWeight_+%\")": -100,
+                        "(Value=\"BasFishCarryWeight_+%\")": -100
                     }
                 }
             ]
