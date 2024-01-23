@@ -57,6 +57,7 @@
                     "Name": "Larkwell_Backpack_Alpha",
                     "GrantedStats": {
                         "(Value=\"BaseBackpackSlots_+\")": 80,
+                        "(Value=\"BaseWeightCapacity_+\")": 300,
                         "(Value=\"BaseOreCarryWeight_+%\")": -90,
                         "(Value=\"BaseStoneCarryWeight_+%\")": -90,
                         "(Value=\"BaseFiberCarryWeight_+%\")": -90,
@@ -3712,7 +3713,7 @@
                     "MaxStack": 1000
                 }
             ]
-        },    
+        },
         {
             "CurrentFile": "EndOfMod"
         }
