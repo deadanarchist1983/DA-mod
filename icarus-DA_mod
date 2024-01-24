@@ -8,7 +8,25 @@
     "description": "My MOD",
     "Level2": "True",
     "Rows": [
-        {
+{
+                "CurrentFile": "Items-Types-D_BuildingTypes.json",
+                "File_Items": [
+                    {
+                        "Name": "Wood",
+                        "Stats": {
+                            "(Value=\"BaseBuildingInsulation_+\")": 15,
+                            "(Value=\"BaseTreeCollisionDamageResistance_%\")": 100,
+                            "(Value=\"BaseWindDamageResistance_%\")": 100,
+                            "(Value=\"BaseMeleeDamageResistance_%\")": 100,
+                            "(Value=\"BaseFireDamageResistance_%\")": 100,
+                            "(Value=\"BaseProjectileDamageResistance_%\")": 100,
+                            "(Value=\"BasePhysicalDamageResistance_%\")": 100,
+                            "(Value=\"BaseCollisionDamageResistance_%\")": 100
+                        }
+                    }
+                ]
+            },        
+{
             "CurrentFile": "Crafting-D_ProcessorRecipes.json",
             "File_Items": [
                 {
