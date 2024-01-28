@@ -9,6 +9,28 @@
     "Level2": "True",
     "Rows": [
         {
+            "CurrentFile": "Items-D_ItemsStatic.json",
+            "File_Items": [
+                {
+                    "Name": "Basic_Fishing_Rod",
+                    "AdditionalStats": {
+                        "(Value=\"BaseFishingTime_+%\")": -100,
+                        "(Value=\"BaseCaughtFishQuality_+%\")": 100,
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -100
+                    }
+                },
+                {
+                    "Name": "Basic_Fishing_Trap",
+                    "AdditionalStats": {
+                        "(Value=\"BaseFishingTime_+%\")": -100,
+                        "(Value=\"BaseCaughtFishQuality_+%\")": 100,
+                        "(Value=\"BaseAnimalThreatModifier_+%\")": -100,
+                        "(Value=\"BaseInventoryCannotSpoil_?\")": 1
+                    }
+                }
+            ]
+        },
+        {
             "CurrentFile": "Bestiary-D_BestiaryPoints.json",
             "File_Items": [
                 {
@@ -50,8 +72,101 @@
             ]
         },
         {
-            "CurrentFile": "Crafting-D_ProcessorRecipes.json",
+            "CurrentFile": "Items-Types-D_BuildingTypes.json",
             "File_Items": [
+                {
+                    "Name": "Wood",
+                    "Stats": {
+                        "(Value=\"BaseBuildingInsulation_+\")": 15,
+                        "(Value=\"BaseTreeCollisionDamageResistance_%\")": 100,
+                        "(Value=\"BaseWindDamageResistance_%\")": 100,
+                        "(Value=\"BaseMeleeDamageResistance_%\")": 100,
+                        "(Value=\"BaseFireDamageResistance_%\")": 100,
+                        "(Value=\"BaseProjectileDamageResistance_%\")": 100,
+                        "(Value=\"BasePhysicalDamageResistance_%\")": 100,
+                        "(Value=\"BaseCollisionDamageResistance_%\")": 100
+                    }
+                }
+            ]
+        },
+        {
+            "CurrentFile": "Crafting-D_ProcessorRecipes.json",
+            "Defaults": {
+                "bForceDisableRecipe": false,
+                "Requirement": {
+                    "RowName": "None",
+                    "DataTableName": "D_Talents"
+                },
+                "SessionRequirement": {
+                    "DataTableName": "D_CharacterFlags",
+                    "RowName": "None"
+                },
+                "CharacterRequirement": {
+                    "RowName": "None",
+                    "DataTableName": "D_CharacterFlags"
+                },
+                "RequiredMillijoules": 800,
+                "RecipeSets": [],
+                "ResourceCostMultipliers": [],
+                "Inputs": [
+                    {
+                        "Element": {
+                            "RowName": "None",
+                            "DataTableName": "D_ItemsStatic"
+                        },
+                        "Count": 1,
+                        "DynamicProperties": []
+                    }
+                ],
+                "ResourceInputs": [],
+                "bSelectOutputItemRandomly": false,
+                "Outputs": [
+                    {
+                        "Element": {
+                            "RowName": "None",
+                            "DataTableName": "D_ItemTemplate"
+                        },
+                        "Count": 1,
+                        "DynamicProperties": []
+                    }
+                ],
+                "ResourceOutputs": [],
+                "Refundable": "Inherit",
+                "ExperienceMultiplier": 1,
+                "Audio": {
+                    "RowName": "None",
+                    "DataTableName": "D_CraftingAudioData"
+                }
+            },
+            "File_Items": [
+                {
+                    "Name": "Portable_Beacon",
+                    "RequiredMillijoules": 800,
+                    "Inputs": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 1,
+                            "DynamicProperties": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Basic_Fishing_Trap",
+                    "RequiredMillijoules": 800,
+                    "Inputs": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 1,
+                            "DynamicProperties": []
+                        }
+                    ]
+                },
                 {
                     "Name": "Bone_Spear",
                     "RequiredMillijoules": 800
@@ -970,11 +1085,31 @@
                 },
                 {
                     "Name": "Mission_Communicator_T3",
-                    "RequiredMillijoules": 800
+                    "RequiredMillijoules": 800,
+                    "Inputs": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 1,
+                            "DynamicProperties": []
+                        }
+                    ]
                 },
                 {
                     "Name": "Mission_Communicator_T4",
-                    "RequiredMillijoules": 800
+                    "RequiredMillijoules": 800,
+                    "Inputs": [
+                        {
+                            "Element": {
+                                "RowName": "Wood",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 1,
+                            "DynamicProperties": []
+                        }
+                    ]
                 },
                 {
                     "Name": "Bone_Tusks",
@@ -1439,42 +1574,6 @@
             ]
         },
         {
-            "CurrentFile": "Items-Types-D_BuildingTypes.json",
-            "File_Items": [
-                {
-                    "Name": "Wood",
-                    "Stats": {
-                        "(Value=\"BaseBuildingInsulation_+\")": 15,
-                        "(Value=\"BaseTreeCollisionDamageResistance_%\")": 100,
-                        "(Value=\"BaseWindDamageResistance_%\")": 100,
-                        "(Value=\"BaseMeleeDamageResistance_%\")": 100,
-                        "(Value=\"BaseFireDamageResistance_%\")": 100,
-                        "(Value=\"BaseProjectileDamageResistance_%\")": 100,
-                        "(Value=\"BasePhysicalDamageResistance_%\")": 100,
-                        "(Value=\"BaseCollisionDamageResistance_%\")": 100
-                    }
-                }
-            ]
-        },
-        {
-            "CurrentFile": "Crafting-D_ProcessorRecipes.json",
-            "File_Items": [
-                {
-                    "Name": "Portable_Beacon",
-                    "Inputs": [
-                        {
-                            "Element": {
-                                "RowName": "Wood",
-                                "DataTableName": "D_ItemsStatic"
-                            },
-                            "Count": 1,
-                            "DynamicProperties": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "CurrentFile": "Alterations-D_Alterations.json",
             "File_Items": [
                 {
@@ -1511,7 +1610,11 @@
             "File_Items": [
                 {
                     "Name": "Backpack",
-                    "StartingSlots": 100
+                    "StartingSlots": 200
+                },
+                {
+                    "Name": "Fishing_Trap",
+                    "StartingSlots": 30
                 }
             ]
         },
@@ -1521,7 +1624,7 @@
                 {
                     "Name": "IO_Undersuit",
                     "ArmourStats": {
-                        "(Value=\"BaseUpgradeSlots_+\")": 4,
+                        "(Value=\"BaseUpgradeSlots_+\")": 1,
                         "(Value=\"BaseOxygenSlots_+\")": 1,
                         "(Value=\"BaseFoodSlots_+\")": 1,
                         "(Value=\"BaseWaterSlots_+\")": 1
@@ -1535,6 +1638,10 @@
                 {
                     "Name": "Meta_Item_Larkwell",
                     "Max_Durability": 999999
+                },
+                {
+                    "Name": "Meta_Armor",
+                    "Max_Durability": 999999
                 }
             ]
         },
@@ -1544,7 +1651,6 @@
                 {
                     "Name": "Larkwell_Backpack_Alpha",
                     "GrantedStats": {
-                        "(Value=\"BaseBackpackSlots_+\")": 10,
                         "(Value=\"BaseWeightCapacity_+\")": 300,
                         "(Value=\"BaseOreCarryWeight_+%\")": -100,
                         "(Value=\"BaseStoneCarryWeight_+%\")": -100,
@@ -1561,6 +1667,31 @@
                         "(Value=\"BaseFirearmCarryWeight_+%\")": -100,
                         "(Value=\"BaseExtractorCarryWeight_+%\")": -100,
                         "(Value=\"BasFishCarryWeight_+%\")": -100
+                    }
+                },
+                {
+                    "Name": "Module_World_Boss",
+                    "GrantedStats": {
+                        "(Value=\"BaseMovementSpeed_+%\")": 10,
+                        "(Value=\"BaseFallDamageResistance_%\")": 40,
+                        "(Value=\"BaseOxygenConsumption_+%\")": -15,
+                        "(Value=\"BaseFoodConsumption_+%\")": -15,
+                        "(Value=\"BaseWaterConsumption_+%\")": -15,
+                        "(Value=\"BaseFireDamageResistance_%\")": 50,
+                        "(Value=\"BasePoisonDamageResistance_%\")": 50,
+                        "(Value=\"BaseHeatResistance_%\")": 10,
+                        "(Value=\"BaseColdResistance_%\")": 10,
+                        "(Value=\"BasePneumoniaResistance_%\")": 50,
+                        "(Value=\"BaseCaveHealthRegen_+%\")": 15,
+                        "(Value=\"BaseCavewormExtraDamage_+%\")": 15,
+                        "(Value=\"BaseHypothermiaResistance_%\")": 50,
+                        "(Value=\"BaseHyperthermiaResistance_%\")": 50,
+                        "(Value=\"BaseChanceToCatchUniqueFish_+%\")": 200,
+                        "(Value=\"BaseCaughtFishQuality_+%\")": 10,
+                        "(Value=\"BaseWoundResistance_%\")": 50,
+                        "(Value=\"BaseDeepWoundResistance_%\")": 50,
+                        "(Value=\"BaseTamedCreatureMovementSpeed_+%\")": 25,
+                        "(Value=\"BaseTamedCreatureMaximumStamina_+%\")": 50
                     }
                 }
             ]
@@ -1705,6 +1836,10 @@
                 },
                 {
                     "Name": "Item_Leather",
+                    "MaxStack": 10000
+                },
+                {
+                    "Name": "Item_Fur",
                     "MaxStack": 10000
                 },
                 {
